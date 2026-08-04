@@ -234,18 +234,18 @@
   <div class="kpi-strip">
     <div class="kpi">
       <div class="kpi-label">Average score</div>
-      <div class="kpi-value">6.1<span style="font-size:16px;color:var(--ink-soft);font-weight:600;"> / 10</span></div>
+      <div class="kpi-value">7.4<span style="font-size:16px;color:var(--ink-soft);font-weight:600;"> / 10</span></div>
       <div class="kpi-sub">Group mean across 9 participants</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Top score</div>
       <div class="kpi-value accent">9 / 10</div>
-      <div class="kpi-sub">Sakshi Hire</div>
+      <div class="kpi-sub">Sakshi Hire, Sam Cruze, Ryan Smith (tied)</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Weakest question</div>
-      <div class="kpi-value" style="color:var(--bad);">Q7</div>
-      <div class="kpi-sub">Only 1 of 9 correct (11%)</div>
+      <div class="kpi-value" style="color:var(--bad);">Q1 &amp; Q6</div>
+      <div class="kpi-sub">Tied lowest — 4 of 9 correct each (44%)</div>
     </div>
   </div>
 
@@ -300,30 +300,30 @@
       <div class="take-card">
         <div class="n">01</div>
         <h4>Solid overall performance</h4>
-        <p>Group average of 6.1/10, with 6 of 9 participants at or above the pass mark and a top score of 9.</p>
+        <p>Group average of 7.4/10, with 8 of 9 participants at or above the pass mark and a top score of 9.</p>
       </div>
       <div class="take-card">
         <div class="n">02</div>
         <h4>Strong on core rules</h4>
-        <p>Manager escalation (Q10), gutter annotation (Q9) and debris handling (Q8) were nearly universal — 8 to 9 correct.</p>
+        <p>Manager escalation (Q10), the tile retake/push call (Q7), gutter annotation (Q9) and debris handling (Q8) were nearly universal — 8 to 9 correct.</p>
       </div>
       <div class="take-card">
         <div class="n">03</div>
         <h4>Retraining priorities</h4>
-        <p>Tile retake vs. push (Q7), zone 5 rezoning (Q2), and the non-live image rule (Q1) had the most errors.</p>
+        <p>The non-live image rule (Q1) and bathroom overview image handling (Q6) had the most errors, with the "Move-in Date" pop-up rule (Q3) also inconsistent.</p>
       </div>
       <div class="take-card">
         <div class="n">04</div>
         <h4>Recommended next step</h4>
-        <p>Run a short refresher on the three weak areas, then re-test the three participants who scored below 6.</p>
+        <p>Run a short refresher on image-handling questions (Q1, Q6, Q3), then re-test Tony K, who is the only participant currently below the pass mark.</p>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="wrap" style="padding:0;">
-      <span>CHRP Technologies · Property Inspection Training</span>
-      <span>Assessment 1 · Generated from Google Forms export</span>
+      <span> </span>
+      <span> </span>
     </div>
   </footer>
 </div>
@@ -358,12 +358,12 @@ const IMAGES = {
 
 const QUESTIONS = [
   {n:1, short:"Only non-live image in the inspection", full:"In the inspection this is the only non-live image. What action should we take?", correct:"Delete it", img:"q1"},
-  {n:2, short:"Rezone zone 5, or leave as-is?", full:"Should we rezone zone 5 or leave it as it is?", correct:"Rezone", img:"q2"},
+  {n:2, short:"Rezone zone 5, or leave as-is?", full:"Should we rezone zone 5 or leave it as it is?", correct:"Leave it as it is", img:"q2"},
   {n:3, short:'"Move-in Date" pop-up on Vacant status', full:'If you change the occupancy status to "Vacant", what should you do when the "Move-in Date" pop-up option appears?', correct:"Leave it as it is (blank)"},
   {n:4, short:"Nationwide retake limit", full:"For Nationwide, how many times can we send a retake?", correct:"1"},
   {n:5, short:"Red-arrow areas as vegetation contact?", full:"Should the highlighted areas (red arrows) be marked as vegetation contact?", correct:"No", img:"q5"},
   {n:6, short:"Bathroom overview image handling", full:"Below is the only bathroom overview image like this in the inspection. What action should we take?", correct:"Crop and Reupload", img:"q6"},
-  {n:7, short:"Tiles: retake or push?", full:"Should these tiles be sent for a retake or pushed?", correct:"Retake", img:"q7"},
+  {n:7, short:"Tiles: retake or push?", full:"Should these tiles be sent for a retake or pushed?", correct:"Push it", img:"q7"},
   {n:8, short:"AI detects very small amount of debris", full:"If AI detects a very small amount of debris, what is the correct action?", correct:"We can change the condition from bad to good and keep the zone"},
   {n:9, short:"Annotating a damaged gutter", full:"If a gutter is damaged, what should it be annotated as?", correct:"Damage Area"},
   {n:10, short:"Bad condition found after report approval", full:"If you approve an inspection and the full report is generated, but afterward you notice a bad condition, what action should you take?", correct:"Inform the Manager"}
@@ -372,13 +372,13 @@ const QUESTIONS = [
 const PARTICIPANTS = [
   {name:"Sakshi Hire", total:9, answers:["Delete it","Rezone","Leave it as it is (blank)","1","No","Crop and Reupload","Push it","We can change the condition from bad to good and keep the zone","Damage Area","Inform the Manager"]},
   {name:"Monika Brown", total:7, answers:["Delete it","Leave it as it is","Select the date from calendar","1","No","Crop and Reupload","Retake","We can change the condition from bad to good and keep the zone","No need to add as it is a non- structural element","Inform the Manager"]},
-  {name:"Sam Cruze", total:7, answers:["Delete it","Leave it as it is","Leave it as it is (blank)","1","No","Push it","Push it","We can change the condition from bad to good and keep the zone","Damage Area","Inform the Manager"]},
-  {name:"Ryan Smith", total:7, answers:["Delete it","Leave it as it is","Leave it as it is (blank)","1","No","Push it","Push it","We can change the condition from bad to good and keep the zone","Damage Area","Inform the Manager"]},
+  {name:"Sam Cruze", total:9, answers:["Delete it","Leave it as it is","Leave it as it is (blank)","1","No","Push it","Push it","We can change the condition from bad to good and keep the zone","Damage Area","Inform the Manager"]},
+  {name:"Ryan Smith", total:9, answers:["Delete it","Leave it as it is","Leave it as it is (blank)","1","No","Push it","Push it","We can change the condition from bad to good and keep the zone","Damage Area","Inform the Manager"]},
   {name:"Akanksha Pagar", total:6, answers:["Push it as it is","Rezone","Select the date from calendar","1","Yes","Crop and Reupload","Push it","We can change the condition from bad to good and keep the zone","Damage Area","Inform the Manager"]},
-  {name:"Brandon Patino Giraldo", total:6, answers:["Push it as it is","Leave it as it is","Leave it as it is (blank)","1","No","Push it","Push it","We can change the condition from bad to good and keep the zone","Damage Area","Inform the Manager"]},
-  {name:"Karen Arias Rendón", total:5, answers:["Push it as it is","Leave it as it is","Leave it as it is (blank)","1","Yes","Push it","Push it","We can change the condition from bad to good and keep the zone","Damage Area","Inform the Manager"]},
-  {name:"Chaitanya Ghate", total:5, answers:["Push it as it is","Leave it as it is","I don't know","2","No","Crop and Reupload","Push it","We can change the condition from bad to good and keep the zone","Damage Area","Inform the Manager"]},
-  {name:"Tony K", total:3, answers:["Push it as it is","Leave it as it is","Select the date from calendar","2","No","Retake","Push it","Delete the annotation","Damage Area","Inform the Manager"]}
+  {name:"Brandon Patino Giraldo", total:8, answers:["Push it as it is","Leave it as it is","Leave it as it is (blank)","1","No","Push it","Push it","We can change the condition from bad to good and keep the zone","Damage Area","Inform the Manager"]},
+  {name:"Karen Arias Rendón", total:7, answers:["Push it as it is","Leave it as it is","Leave it as it is (blank)","1","Yes","Push it","Push it","We can change the condition from bad to good and keep the zone","Damage Area","Inform the Manager"]},
+  {name:"Chaitanya Ghate", total:7, answers:["Push it as it is","Leave it as it is","I don't know","2","No","Crop and Reupload","Push it","We can change the condition from bad to good and keep the zone","Damage Area","Inform the Manager"]},
+  {name:"Tony K", total:5, answers:["Push it as it is","Leave it as it is","Select the date from calendar","2","No","Retake","Push it","Delete the annotation","Damage Area","Inform the Manager"]}
 ];
 
 const PASS_MARK = 6;
